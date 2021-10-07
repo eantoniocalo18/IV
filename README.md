@@ -1,4 +1,4 @@
-# Hito 0
+# CUPONAPP
 
 # Problema a solventar
 Gestor de cupones descuento de un supermercado

@@ -18,5 +18,5 @@ La idea del proyecto está basada en varias ideas fundamentales:
 
 ## Documentación
 
-
-
+La documentación del proyecto se encuentra en el archivo en [este enlace.] (https://github.com/eantoniocalo18/IV/docs)
+En el archivo [Issues] (https://github.com/eantoniocalo18/IV/docs/ISSUES.md) se encuentra la información relacionada con los tipos de usuario, las historias de usuario y los milestones 

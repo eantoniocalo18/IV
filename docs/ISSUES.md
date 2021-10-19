@@ -2,9 +2,9 @@
 
 ## Tipos de usuario
 
-- Cliente: Persona que realiza la compra y se ve beneficiada de los descuentos que le ofrece la aplicación en determinados productos.
+- Gestor de ventas: Usuario que usará la aplicación para intentar maximizar las ventas y también para que se produzcan los cupones de descuento 
 
-- Supermercado: Empresa que intenta maximizar su venta de productos y también dar salida a aquellos productos cuya fecha de consumo preferente esté cercana.
+- Gestor de almacen: Usuario encargado del almacen de la empresa. Su principal función es actualizar el inventario e indicar qué productos exceden del stock
 
 ## ISSUES
 Descripción de los issues que se plantean en el proyecto

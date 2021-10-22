@@ -2,9 +2,9 @@
 
 ## Tipos de usuario
 
-- Gestor de ventas: Usuario que usará la aplicación para intentar maximizar las ventas y también para que se produzcan los cupones de descuento 
+- Gestor de ventas: Usuario que usará la aplicación para intentar maximizar las ventas y también para que se produzcan los cupones de descuento .
 
-- Gestor de almacen: Usuario encargado del almacen de la empresa. Su principal función es actualizar el inventario e indicar qué productos exceden del stock
+- Gestor de almacen: Usuario encargado del almacen de la empresa. Su principal función es actualizar el inventario e indicar qué productos exceden del stock.
 
 ## ISSUES
 Descripción de los issues que se plantean en el proyecto

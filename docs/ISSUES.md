@@ -15,7 +15,7 @@ Descripción de los issues que se plantean en el proyecto
 
 ## MILESTONES
 
-[M1] (https://github.com/eantoniocalo18/IV/milestone/1) Diseño de clases y base de datos
+[M1] (https://github.com/eantoniocalo18/IV/milestone/1) Diseño del diagrama de clases
 
 [M2] (https://github.com/eantoniocalo18/IV/milestone/2) Definir categorías y asignar los productos
 

@@ -1,7 +1,7 @@
 # CUPONAPP
 
-# Problema a solventar
-Gestor de cupones descuento de un supermercado
+# Idea inicial
+Gestor de cupones de un supermercado. Esta aplicación permitirá suministrar cupones y crear un programa de fidelidad para el cliente y además  tratará de aumentar las ventas del supermercado teniendo en cuenta información proveniente de distintas fuentes. 
 
 # Descripción 
 Los supermercados suelen dar cupones descuento para futuras compras, dependiendo de cuánto gaste ese cliente o simplemente de forma periódica.
@@ -11,16 +11,20 @@ De esta forma, cada cliente tendrá cupones individuales que le permitirán ahor
 # Motivación
 La idea del proyecto está basada en varias ideas fundamentales:
 - Un supermercado quiere evitar bajo cualquier concepto que perder productos porque su fecha de consumo preferente pase.
-- Además, un supermercado siempre pretende dar a conocer a sus clientes nuevos productos que no suelan comprar, con el fin de aumentar sus ventas
-- Por otro lado, un cliente siempre busca el ahorro y, en casos excepcionales donde reciba un gran descuento, se planteará comprar un producto que no es habitual en su cesta de la compra
+- Un supermercado (como cualquier otra empresa) siempre quiere maximizar sus ventas.
+- Por otro lado, un cliente siempre busca el ahorro y, en casos excepcionales donde reciba un buen descuento, se planteará comprar un producto que no es habitual en su cesta de la compra.
 
-Es por ello que la lógica de negocio se basará en tener en cuenta diferentes parámetros como:
--Stock de productos
--Productos que compra un cliente normalmente
-Y dar los cupones orientados para intentar que el cliente compre otro tipo de productos.
 
-Por ejemplo, si el cliente nunca suele comprar en la carnicería del supermercado y hay exceso de stock, se intenta que el cliente prueba esta parte del supermercado para que esa comida no se tenga que tirar y también para ver si le gusta y finalmente comprar siempre la carne ahí
-
+Las acciones que permitirá la aplicación por parte de los encargados del supermercado son:
+-	Proporcionar cupones para evitar tirar productos
+-	Almacenar todas las compras que realiza un cliente
+-	Almacenar todos los cupones que se han proporcionado a un cliente
+-	Comprobar qué cupones ha usado un cliente
+-	Calcular la probabilidad de que un usuario compre un tipo nuevo de producto en base a :
+    o	Compras anteriores
+    o	Cupones suministrados
+-	Calcular el gasto medio mensual de un cliente en nuestro establecimiento 
+-	Implantar un sistema de fidelidad con descuentos basado en el gasto medio mensual
 
 
 ## Documentación

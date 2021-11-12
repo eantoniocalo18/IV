@@ -1,30 +1,17 @@
 # CUPONAPP
 
-# Idea inicial
-Gestor de cupones de un supermercado. Esta aplicación permitirá suministrar cupones y crear un programa de fidelidad para el cliente y además  tratará de aumentar las ventas del supermercado teniendo en cuenta información proveniente de distintas fuentes. 
 
 # Descripción 
-Los supermercados suelen dar cupones descuento para futuras compras, dependiendo de cuánto gaste ese cliente o simplemente de forma periódica.
-Esta aplicación tendría en cuenta el historial de compras del cliente, el stock de los diferentes productos y emitirá cupones de descuento de aquellos productos cuyo stock se esté excediendo.
-De esta forma, cada cliente tendrá cupones individuales que le permitirán ahorrar, el supermercado no tendrá mucho exceso de ciertos productos y además se tendrá en cuenta la fidelidad del cliente, ofreciendo mayores descuentos en función de las compras que haga al mes
+Los supermercados tienen encargados para gestionar sus almacenes que tienen que tener en cuenta infinidad para que todo funcione correctamente.
+Es por ello, que una aplicación que le permita gestionar de manera eficiente el stock de los productos (no haya en exceso ni falta), le permita realizar pedidos de productos de manera automática y que además, gestione el inventario de manera que se pueda observar en tiempo real qué productos hay, podría solucionar muchos de los problemas a los que se tendría que enfrentar dicho usuario. 
 
 # Motivación
-La idea del proyecto está basada en varias ideas fundamentales:
-- Un supermercado quiere evitar bajo cualquier concepto que perder productos porque su fecha de consumo preferente pase.
-- Un supermercado (como cualquier otra empresa) siempre quiere maximizar sus ventas.
-- Por otro lado, un cliente siempre busca el ahorro y, en casos excepcionales donde reciba un buen descuento, se planteará comprar un producto que no es habitual en su cesta de la compra.
+La idea del proyecto está basada en resolver los principales problemas a los que se puede enfrentar un gestor de almacen:
+- En un almacen se quiere evitar bajo cualquier concepto perder productos porque su fecha de consumo preferente pase.
+- La capacidad de almacenamiento es finita, por lo que no se pueden pedir exceso de productos
+- Por otro lado, hay productos que se venden normalmente y cuyo pedido se repite cada cierto tiempo, por lo que sería muy útil que se pidieran solos
+- Además, sería muy útil recibir la estadística del historial de ventas de cada producto para estimar el tiempo para la próxima compra y la cantidad necesaria
 
-
-Las acciones que permitirá la aplicación por parte de los encargados del supermercado son:
--	Proporcionar cupones para evitar tirar productos
--	Almacenar todas las compras que realiza un cliente
--	Almacenar todos los cupones que se han proporcionado a un cliente
--	Comprobar qué cupones ha usado un cliente
--	Calcular la probabilidad de que un usuario compre un tipo nuevo de producto en base a :
-    o	Compras anteriores
-    o	Cupones suministrados
--	Calcular el gasto medio mensual de un cliente en nuestro establecimiento 
--	Implantar un sistema de fidelidad con descuentos basado en el gasto medio mensual
 
 
 ## Documentación

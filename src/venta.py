@@ -32,8 +32,9 @@ class Venta:
 
     -------
     """
-    def __init__(self, id, producto, cantidad):
+    def __init__(self, id, producto, cantidad,fecha):
         self.id = id
         self.producto = producto
         self.cantidad = cantidad
+        self.fecha = fecha
 

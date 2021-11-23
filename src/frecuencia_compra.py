@@ -36,7 +36,7 @@ class FrecuenciaCompra:
 
     -------
     """
-    def __init__(self, id, producto, cantidad):
+    def __init__(self, id, producto):
         self.id = id
         self.producto = producto
         self.cantidad_x_semana = 0
@@ -44,6 +44,6 @@ class FrecuenciaCompra:
     def solicitar_frecuencia(ventas):
         "Método que dada una serie de ventas genera la cantidad de producto vendido x semana"
     
-    def realizar_pedido_automatizado(cantidad):
+    def realizar_pedido_automatizado():
         "Método que realiza un pedido cada semana según la frecuencia de compra"
 

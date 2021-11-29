@@ -10,7 +10,7 @@ import time
 
 class FrecuenciaCompra:
     """
-    Clase utilizada para representar un FrecuenciaCompra de Supermercado.
+    Clase utilizada para representar un FrecuenciaCompra de cantidad Supermercado.
     ...
 
     Atributos

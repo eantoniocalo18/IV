@@ -18,11 +18,10 @@ class Inventario:
    
     Publicos
 
-    producto : Producto
-        contiene un producto
-    cantidad : int
-        mantiene la cantidad de inventario actual de un producto
-    
+    productos_arr:
+        Un arreglo de los productos en el sistema.
+    productos_dict : {producto.id: { cantidad: cantidad, frecuencia:frecuencia}}
+        Un diccionario de productos con los respectivos datos (producto, cantidad,frecuencia)
 
     Métodos
     venta:
@@ -38,19 +37,19 @@ class Inventario:
 
     -------
     """
-    def __init__(self, id, producto, cantidad):
+    def __init__(self, id, productos):
         self.id = id
-        self.producto = producto
-        self.cantidad = cantidad
+        self.productos = productos
+        
 
-    def venta(cantidad):
+    def venta(producto, cantidad):
         "Método que elimina cantidad de productos del inventario por una venta"
         pass
     
-    def abastecimiento(cantidad):
+    def abastecimiento(producto,cantidad):
         "Método que agrega una cantidad de producto al inventario"
         pass
 
-    def perdida(cantidad):
+    def perdida(producto, cantidad):
         "Método que elimina cantidad de productos del inventario por una perdida del producto de algún tipo"
         pass

@@ -45,9 +45,12 @@ class Inventario:
 
     def venta(cantidad):
         "Método que elimina cantidad de productos del inventario por una venta"
+        pass
     
     def abastecimiento(cantidad):
         "Método que agrega una cantidad de producto al inventario"
+        pass
 
     def perdida(cantidad):
         "Método que elimina cantidad de productos del inventario por una perdida del producto de algún tipo"
+        pass

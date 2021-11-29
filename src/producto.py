@@ -24,7 +24,6 @@ class Producto:
         el nombre común del producto
     precio : float
         el precio del producto
-    
 
     Métodos
 

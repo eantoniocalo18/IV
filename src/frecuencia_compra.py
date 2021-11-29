@@ -43,7 +43,9 @@ class FrecuenciaCompra:
 
     def solicitar_frecuencia(ventas):
         "Método que dada una serie de ventas genera la cantidad de producto vendido x semana"
+        pass
     
     def realizar_pedido_automatizado():
         "Método que realiza un pedido cada semana según la frecuencia de compra"
+        pass
 

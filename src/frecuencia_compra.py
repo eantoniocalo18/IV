@@ -5,7 +5,6 @@
 # @created_date: 22/11/2021
 # @version: '1.0'
 # ---------------------------------------------------------------------------
-import time
 
 
 class FrecuenciaCompra:

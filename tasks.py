@@ -5,7 +5,7 @@ def check(c):
 	'''
 	Comprobando la sintaxis del proyecto
 	'''
-	run("pyflakes src")
+	run("python src/producto.py")
 	print("No hay fallos")
 @task
 def test(c):

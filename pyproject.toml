@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "IV"
+version = "0.0.2"
+description = "Proyecto dedicado a la mejora y optimización de la labor de un gestor de almacén."
+authors = ["Antonio Jesus Caño Lopez <e.antoniocalo18@go.ugr.es>"]
+license = "PSF"
+readme = "README.md"
+repository = "https://github.com/eantoniocalo18/IV/"
+
+[tool.poetry.dependencies]
+python = "2.7.18"
+invoke = "^1.3.0"
+pyflakes = "^2.4.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api" 

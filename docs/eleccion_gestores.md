@@ -10,3 +10,9 @@ dependencias y un empaquetador de librerías python. La principal ventaja que
 presenta es que permite coordinar versiones de librerías, versiones de python
 y también versiones de los distintos frameworks para instalar exactamente las
 versiones para las que el proyecto funciona y no se creen conflictos.
+
+# Syntax checker
+Necesitaremos tener un comprobador de sintaxis para nuestro proyecto. 
+En este caso se va a usar Pyflakes dado que permite comprobar la sintaxis de
+todos los archivos .py del directorio que le indiquemos. Por lo tanto, es muy
+sencillo y fácil de usar

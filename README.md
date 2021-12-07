@@ -25,8 +25,27 @@ La idea del proyecto está basada en resolver los principales problemas a los qu
 - Además, sería muy útil recibir la estadística del historial de ventas de cada producto para estimar el tiempo para la próxima compra y la cantidad necesaria
 
   
-  
-  
+# Guía de instalación y uso
+En primer lugar habrá que descargar el proyecto desde este repositorio, usando la orden:
+  - git clone git@github.com:eantoniocalo18/IV
+
+Para la instalación del proyecto, será necesario tener descargado el software Poetry [aquí] (https://python-poetry.org/docs/)
+En el caso de sistemas Unix se podrá utilizar el siguiente comando 
+  - curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
+Una vez instalado, para comprobar que efectivamente está funcionando, usaremos la orden 
+  - poetry --version
+
+En el caso que nos aparezca que no se ha encontrado la orden "poetry" puede deberse a que no se ha añadido correctamente al $PATH del sistema. 
+Para solucionar esto, consultar [aquí] (docs/poetry_problems.md)
+
+Una vez comprobado que Poetry funciona correctamente, seguiremos los siguientes pasos:
+  - poetry install --> Instalará todas las dependencias del proyecto
+  - poetry shell --> Abrirá una terminal para poder ejecutar las diferentes tareas del proyecto
+  Una vez abierto el nuevo entorno, podremos usar las órdenes:
+    - invoke check --> Comprobará la sintaxis del archivo producto.py
+    - invoke test --> Ejecutará los test del proyecto
+
+   
 
 ## Documentación
 

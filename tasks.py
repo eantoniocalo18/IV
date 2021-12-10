@@ -5,7 +5,7 @@ def check(c):
 	'''
 	Comprobando la sintaxis del proyecto
 	'''
-	run("python src/producto.py")
+	run("python -m compileall src/* ")
 	print("No hay fallos")
 @task
 def test(c):

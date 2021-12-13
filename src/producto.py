@@ -23,6 +23,8 @@ class Producto:
         el nombre común del producto
     precio : float
         el precio del producto
+    dimensiones: float
+        espacio (medido en cm cuadrados) que ocupa el objeto
 
     Métodos
 
@@ -30,9 +32,9 @@ class Producto:
     -------
     
     """
-    def __init__(self, id, nombre, precio):
+    def __init__(self, id, nombre, precio,espacio):
         self.id = id
         self.nombre = nombre
         self.precio = precio
-
+        self.espacio = espacio
     

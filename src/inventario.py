@@ -21,7 +21,9 @@ class Inventario:
         Un arreglo de los productos en el sistema.
     productos_dict : {producto.id: { cantidad: cantidad, frecuencia:frecuencia}}
         Un diccionario de productos con los respectivos datos (producto, cantidad,frecuencia)
-
+    dimensiones: 
+    	Dimensiones medidas en m2 que tiene de espacio el almacen
+    	
     Métodos
     venta:
         "Método que elimina cantidad de productos del inventario por una venta"
@@ -36,9 +38,10 @@ class Inventario:
 
     -------
     """
-    def __init__(self, id, productos):
+    def __init__(self, id, productos, dimensiones):
         self.id = id
         self.productos = productos
+        self.dimensiones= dimensiones
         
 
     def venta(producto, cantidad):
@@ -52,3 +55,4 @@ class Inventario:
     def perdida(producto, cantidad):
         "Método que elimina cantidad de productos del inventario por una perdida del producto de algún tipo"
         pass
+        

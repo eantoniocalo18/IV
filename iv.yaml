@@ -3,3 +3,4 @@ entidad: src/producto.py
 automatizar:
     fichero: tasks.py
     orden: invoke
+test: tests/test_estado_almacen.py

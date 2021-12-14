@@ -72,8 +72,8 @@ Unittest también puede ser usado como una librería de aserciones, usándolas b
  Comprobando las opciones que se tienen, se descarta en primer lugar Unittest puesto que no veo necesario ni fácil de usar de manera conjunta el mismo software para ambas cosas.
  Por otro lado, la principal diferencia entre Grappa y Assertpy es que éste ofrece un mayor numero de aserciones, puesto que descartamos Grappa.
  
- Por último, entre Assertpy y Hypotesis he elegido Hypotesis por ser un proyecto menos conocido y con altas prestaciones, capaz de ofrecer las mismas funcionalidades que Assertpy,
- con un tiempo de respuesta de sus issues muy corto y con pocos issues abiertos actualmente.
+ Por último, entre Assertpy y Hypotesis he elegido Hypotesis en una primera instancia y tras realizar varias pruebas de toma de contacto he decidido que no es tan sencilla de usar y las funcionalidades específicas que presenta no resultan útiles para este proyecto. 
+ Por lo tanto se ha elegido Assertpy como librería de aserciones.
 
 
 

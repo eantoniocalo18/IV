@@ -12,4 +12,4 @@ def test(c):
     '''
     Realiza el test de la version del proyecto
     '''
-    print("No hay test disponibles actualmente")
+    run ('pytest')

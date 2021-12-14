@@ -1,10 +1,10 @@
 
-# CUPONAPP
+# MANAGEAPP
 
   
   
 
-# Descripción
+## Descripción
 
 Los supermercados tienen encargados para gestionar sus almacenes que tienen que tener en cuenta infinidad para que todo funcione correctamente.
 
@@ -12,11 +12,11 @@ Es por ello, que una aplicación que le permita gestionar de manera eficiente el
 
   
 
-# Motivación
+## Motivación
 
-La idea del proyecto está basada en resolver los principales problemas a los que se puede enfrentar un gestor de almacen:
+La idea del proyecto está basada en resolver los principales problemas a los que se puede enfrentar un gestor de almacén:
 
-- En un almacen se quiere evitar bajo cualquier concepto perder productos porque su fecha de consumo preferente pase.
+- En un almacén se quiere evitar bajo cualquier concepto perder productos porque su fecha de consumo preferente pase.
 
 - La capacidad de almacenamiento es finita, por lo que no se pueden pedir exceso de productos
 
@@ -25,7 +25,7 @@ La idea del proyecto está basada en resolver los principales problemas a los qu
 - Además, sería muy útil recibir la estadística del historial de ventas de cada producto para estimar el tiempo para la próxima compra y la cantidad necesaria
 
   
-# Guía de instalación y uso
+## Guía de instalación y uso
 En primer lugar habrá que descargar el proyecto desde este repositorio, usando la orden:
   - git clone git@github.com:eantoniocalo18/IV
 
@@ -34,10 +34,19 @@ Una vez descargado el proyecto y todas sus dependencias, podremos realizar las s
 - invoke test : Permitirá ejecutar los test de la aplicación
 - invoke check : Comprobará la sintaxis de los archivos de la aplicación
    
+## Testeo de clase principal
+Para el testeo del código de la clase principal, se usará pytest.
+La ejecución de estos test recaerá principalmente sobre la clase Inventario, que a su vez tendrá una serie de productos almacenados.
+Para llevar a cabo la ejecución,nos situaremos en la carpeta principal del proyecto y escribiremos:
+  - pytest 
+Con esto, pytest buscará entre los diferentes archivos aquellos que empiecen por 'test_', sin embargo, también podemos indicarle que ejecute un test en concreto o un directorio en el que buscar.
+Los test implementados corresponden con las siguientes funcionalidades del sistema:
+  - Saber cuál es el estado actual del almacén, que es útil saberlo antes de hacer un pedido.
+  - Saber si algún producto del almacén tiene bajo stock.
+  - Saber si algún producto del almacén tiene mucho stock.
+
 
 ## Documentación
-
-  
 
 La documentación del proyecto se encuentra en el archivo en [este enlace](https://github.com/eantoniocalo18/IV/tree/main/docs)
 

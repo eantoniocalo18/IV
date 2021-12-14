@@ -76,4 +76,13 @@ Unittest también puede ser usado como una librería de aserciones, usándolas b
  Por lo tanto se ha elegido Assertpy como librería de aserciones.
 
 
+# Principios F.I.R.S.T
+Los principios FIRST son propiedades que deberían tener las pruebas unitarias.
+Cada sigla corresponde a una característica que cumplen y serán explicadas a continuación:
+- Fast: Los test tienen que ser rápidos, en el caso de los test implementados se ejecutan en 0,1 segundo.
+- Independient: Todos los test son independientes unos de otros, no poseen dependencias y se pueden ejecutar por separado.
+- Repeteable: Los test funcionan y se pueden reproducir en otro entorno.
+- Self-validating: Los test se validan por sí mismos sin necesidad de que el usuario tenga que valorar la salida obtenida.
+- Timely: Los test se han definido y planteado antes de escribir el código, para asegurar que se han planteado bien las condiciones y el test comprueba lo que realmente se espera.
+
 

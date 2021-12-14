@@ -5,7 +5,7 @@
 # @created_date: 22/11/2021
 # @version: '1.0'
 # --------------------------------------------------------------------------
-
+from src.producto import *
 
 class Inventario:
     """
@@ -17,8 +17,6 @@ class Inventario:
    
     Publicos
 
-    productos_arr:
-        Un arreglo de los productos en el sistema.
     productos_dict : {producto.id: { cantidad: cantidad, frecuencia:frecuencia}}
         Un diccionario de productos con los respectivos datos (producto, cantidad,frecuencia)
     dimensiones: 
@@ -38,9 +36,9 @@ class Inventario:
 
     -------
     """
-    def __init__(self, id, productos, dimensiones):
+    def __init__(self, id, productos_dict, dimensiones):
         self.id = id
-        self.productos = productos
+        self.productos_dict = productos_dict
         self.dimensiones= dimensiones
         
 
@@ -55,4 +53,18 @@ class Inventario:
     def perdida(producto, cantidad):
         "Método que elimina cantidad de productos del inventario por una perdida del producto de algún tipo"
         pass
+    
+    def get_espacio_usado(self):
+        espacio_ocupado=0
+        for products in self.productos_dict.items():
+             espacio_ocupado += (float(products[0].get_espacio()) * float(products[1]))
+
+        return espacio_ocupado
         
+    def get_dimensiones(self):
+        return self.dimensiones
+         
+         
+         
+         
+         

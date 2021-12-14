@@ -42,4 +42,7 @@ class Producto:
         self.espacio = espacio
         self.cantidad_baja= cantidad_baja
         self.cantidad_alta= cantidad_alta
-    
+        
+        
+    def get_espacio(self):
+        return self.espacio

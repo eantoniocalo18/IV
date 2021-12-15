@@ -17,7 +17,7 @@ class Inventario:
    
     Publicos
 
-    productos_dict : {producto.id: { cantidad: cantidad, frecuencia:frecuencia}}
+    almacen : {producto.id: { cantidad: cantidad, frecuencia:frecuencia}}
         Un diccionario de productos con los respectivos datos (producto, cantidad,frecuencia)
     dimensiones: 
     	Dimensiones medidas en m2 que tiene de espacio el almacen
@@ -36,9 +36,9 @@ class Inventario:
 
     -------
     """
-    def __init__(self, id, productos_dict, dimensiones):
+    def __init__(self, id, almacen, dimensiones):
         self.id = id
-        self.productos_dict = productos_dict
+        self.almacen = almacen
         self.dimensiones= dimensiones
         
 

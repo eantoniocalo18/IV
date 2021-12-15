@@ -39,8 +39,6 @@ Para el testeo del código de la clase principal, se usará pytest.
 La ejecución de estos test recaerá principalmente sobre la clase Inventario, que a su vez tendrá una serie de productos almacenados.
 Para llevar a cabo la ejecución,nos situaremos en la carpeta principal del proyecto y escribiremos:
   - invoke test 
-
-
 Con esto, pytest buscará entre los diferentes archivos aquellos que empiecen por 'test_', sin embargo, también podríamos indicarle que ejecute un test en concreto o un directorio en el que buscar.
 Los test implementados corresponden con las siguientes funcionalidades del sistema:
   - Saber cuál es el estado actual del almacén, que es útil saberlo antes de hacer un pedido.
@@ -52,8 +50,6 @@ Los test implementados corresponden con las siguientes funcionalidades del siste
 
 La documentación del proyecto se encuentra en el archivo en [este enlace](https://github.com/eantoniocalo18/IV/tree/main/docs)
 
- - En el archivo [Issues](https://github.com/eantoniocalo18/IV/blob/main/docs/ISSUES.md) se encuentra la información relacionada con los tipos de usuario, las historias de usuario y los milestones
- - En el archivo [Eleccion lenguaje](https://github.com/eantoniocalo18/IV/blob/main/docs/eleccion_lenguaje.md) se encuentra la información relacionada con la elección del lenguaje y el desarrollo de la clase Producto.
- - En el archivo [Eleccion gestores](https://github.com/eantoniocalo18/IV/blob/main/docs/eleccion_gestores.md) Se ha justificado la elección de los gestores de dependencias y tareas.
- - En el archivo [Test](https://github.com/eantoniocalo18/IV/blob/Objetivo-4/docs/eleccion_lenguaje.md) se encuentra la información referente a las herramientas utilizadas para el desarrollo de los test del proyecto.
- 
+ - En el archivo [Issues](https://github.com/eantoniocalo18/IV/docs/ISSUES.md) se encuentra la información relacionada con los tipos de usuario, las historias de usuario y los milestones
+ - En el archivo [Eleccion lenguaje](https://github.com/eantoniocalo18/IV/docs/eleccion_lenguaje.md) se encuentra la información relacionada con la elección del lenguaje y el desarrollo de la clase Producto.
+ - En el archivo [Eleccion gestores](https://github.com/eantoniocalo18/IV/docs/eleccion_gestores.md) Se ha justificado la elección de los gestores de dependencias y tareas.

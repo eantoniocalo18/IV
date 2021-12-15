@@ -15,8 +15,8 @@ def test_estado_almacen():
     inventario = Inventario(1,almacen,100)
     
     # Comprobamos que ambos NO están vacíos
-    assert_that(productos, description='Se han cargado mal los productos').is_not_empty()
-    assert_that(almacen, description='Se ha cargado mal el inventario').is_not_empty()
+    assert_that(productos).is_not_empty()
+    assert_that(almacen).is_not_empty()
     
     # Comprobamos que el espacio es >0 y < dimensiones del almacen
     assert_that(inventario.get_espacio_usado()).is_greater_than(0)

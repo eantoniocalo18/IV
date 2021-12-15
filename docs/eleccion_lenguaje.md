@@ -1,7 +1,6 @@
-# Objetivo 2
-## Elección del Lenguaje de Programación
+# Elección del Lenguaje de Programación
 
-El lenguaje de programación que se ha escogido para el desarrollo del proyecto es Python v3.8. Las razones más importantes de la elección son:
+El lenguaje de programación que se ha escogido para el desarrollo del proyecto es Python v2.7.18. Las razones más importantes de la elección son:
 
  - Facilidad de sintaxis y comodidad para desarrollo.
  - Es especilamente bueno para un desarrollo rápido al igual que el prototipeado.

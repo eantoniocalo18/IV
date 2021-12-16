@@ -9,19 +9,19 @@
 
 ## Búsqueda de alternativas
 
-### Pytest
+### [Pytest](https://github.com/pytest-dev/pytest)
 - La salida que ofrece es limpia y fácilmente entendible ✓
 - fixture es una orden de pytest ✓
 - Los issues suelen contestarse rápidamente y además incluyendo nuevos commits ✓
 - Permite el uso de diferentes librerías de aserciones ✓
 
-### UNITTEST
+### [Unittest](https://github.com/python/cpython/tree/main/Lib/unittest)
 - Permite el uso de fixtures _fixtures_ ✓
 - Su salida es clara aunque no muy descriptiva 1/2 
-- Actualmente cuenta con más de 1,5k PRs abiertos, muchos de ellos reportando bugs sin resolver X
+- En continuo mantenimiento, tiene commits diariamente  ✓
 - Permite el uso de diferentes librerías de aserciones ✓
 
-### NOSE Y NOSE 2
+### NOSE Y [NOSE 2](https://github.com/nose-devs/nose2)
 El lema de NOSE es "NOSE extiende unittest para facilitar las pruebas".
 Actualmente NOSE está en desuso y NOSE 2 también se ha basado en Pytest para su desarrollo.
 - Permite el uso de fixtures. ✓
@@ -33,7 +33,7 @@ Actualmente NOSE está en desuso y NOSE 2 también se ha basado en Pytest para s
 ## Elección
 Como se ha podido comprobar, según los requisitos establecidos las valoraciones han quedado:
 - Pytest 4/4
-- Unittest 2,5/4
+- Unittest 3,5/4
 - Nose y Nose2 2,5/4
 Por lo tanto se ha elegido Pytest 
 
@@ -53,16 +53,16 @@ Por lo tanto se ha elegido Pytest
 - Permite realizar comprobaciones de forma sencilla sobre objetos más complejos como datetime, ficheros u objetos compuestos
 - La salida es similar a __assert__
 
-### Grappa
+### [Grappa](https://github.com/grappa-py/grappa)
 - Ofrece una sintaxis un poco más ligera a Assertpy
 - Ofrece una salida muy extensa, permitiendo mostrar el código
 - Tiene menos aserciones que Assertpy
 - Permite el lanzamiento de excepciones
 
-### Unittest
+### [Unittest](https://github.com/python/cpython/tree/main/Lib/unittest)
 Unittest también puede ser usado como una librería de aserciones, usándolas bajo una clase 'test' .
 
-### Hypotesis 
+### [Hypotesis](https://github.com/HypothesisWorks/hypothesis) 
 - Ofrece una sintaxis sencilla
 - La salida es bastante descriptiva
 - Ofrece un gran número de aserciones

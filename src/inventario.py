@@ -56,8 +56,8 @@ class Inventario:
     
     def get_espacio_usado(self):
         espacio_ocupado=0
-        for products in self.productos_dict.items():
-             espacio_ocupado += (float(products[0].get_espacio()) * float(products[1]))
+        for producto, cantidad in self.almacen.items():
+             espacio_ocupado += (float(producto.get_espacio()) * float(cantidad))
 
         return espacio_ocupado
         

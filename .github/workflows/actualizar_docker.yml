@@ -1,10 +1,8 @@
 name: Actualizar docker en DockerHub
 on: 
   push:
-    paths:
-      - 'poetry.lock'
-      - 'pyproject.toml'
-      - 'Dockerfile'
+    branches:
+      - main
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest

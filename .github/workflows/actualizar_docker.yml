@@ -1,7 +1,11 @@
 name: Actualizar docker en DockerHub
 on: 
   push:
-
+    paths:
+      - Dockerfile
+      - pyproject.toml
+      - .github/workflows/dockerhub.yml
+      - README.md
 jobs:
   actualizar_docker:
     runs-on: ubuntu-latest

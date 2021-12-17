@@ -39,8 +39,15 @@ Para el testeo del código de la clase principal, se usará pytest.
 La ejecución de estos test recaerá principalmente sobre la clase Inventario, que a su vez tendrá una serie de productos almacenados.
 Para llevar a cabo la ejecución,nos situaremos en la carpeta principal del proyecto y escribiremos:
   - invoke test 
+
 Con esto, pytest buscará entre los diferentes archivos aquellos que empiecen por 'test_', sin embargo, también podríamos indicarle que ejecute un test en concreto o un directorio en el que buscar.
+Si queremos ejecutar los test en un entorno aislado, podremos hacerlo ejecutando los siguientes comandos, que crearán y ejecutaran un docker:
+  - invoke docker_build
+  - invoke docker_run 
+
+
 Los test implementados corresponden con las siguientes funcionalidades del sistema:
+
   - Saber cuál es el estado actual del almacén, que es útil saberlo antes de hacer un pedido.
   - Saber si algún producto del almacén tiene bajo stock.
   - Saber si algún producto del almacén tiene mucho stock.

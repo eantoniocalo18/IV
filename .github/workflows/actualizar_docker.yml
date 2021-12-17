@@ -1,8 +1,6 @@
 name: Actualizar docker en DockerHub
 on: 
   push:
-    branches:
-      - main
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest

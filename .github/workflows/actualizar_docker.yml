@@ -1,6 +1,7 @@
 name: Actualizar docker en DockerHub
 on: 
   push:
+  
 jobs:
   actualizar_docker:
     runs-on: ubuntu-latest

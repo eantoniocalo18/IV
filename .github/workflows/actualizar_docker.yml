@@ -1,18 +1,11 @@
 name: Actualizar docker en DockerHub
 on: 
   push:
-    paths:
-      - 'poetry.lock'
-      - 'pyproject.toml'
-      - 'Dockerfile'
+
 jobs:
-  Explore-GitHub-Actions:
+  actualizar_docker:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
-      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
-      - name: Check out repository code
+      - name: Comprueba repo
         uses: actions/checkout@v2
-
       

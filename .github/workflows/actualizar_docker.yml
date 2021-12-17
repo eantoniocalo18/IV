@@ -17,4 +17,4 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           repository: eantoniocalo/iv
-          tags: latest 
+          tags: latest

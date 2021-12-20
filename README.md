@@ -34,7 +34,7 @@ Una vez descargado el proyecto y todas sus dependencias, podremos realizar las s
 - invoke test : Permitirá ejecutar los test de la aplicación
 - invoke check : Comprobará la sintaxis de los archivos de la aplicación
    
-## Testeo de clase principal
+### Testeo de clase principal
 Para el testeo del código de la clase principal, se usará pytest.
 La ejecución de estos test recaerá principalmente sobre la clase Inventario, que a su vez tendrá una serie de productos almacenados.
 Para llevar a cabo la ejecución,nos situaremos en la carpeta principal del proyecto y escribiremos:

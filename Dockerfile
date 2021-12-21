@@ -6,7 +6,7 @@ WORKDIR /app/
 
 COPY pyproject.toml poetry.lock tasks.py ./
 
-RUN useradd --create-home testuser && chown testuser:testuser /app/test
+RUN useradd --create-home testuser && chown testuser:testuser /app
 
 
 RUN  pip install poetry && poetry config virtualenvs.create false && poetry install 

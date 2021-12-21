@@ -2,6 +2,9 @@ FROM python:3.9-slim-bullseye
 
 LABEL version "1.0" mantainer="e.antoniocalo18@go.ugr.es"
 
+RUN useradd --create-home testuser && chown testuser:testuser /app/test
+USER testuser
+
 WORKDIR /app/
 
 COPY pyproject.toml poetry.lock tasks.py ./
@@ -12,8 +15,7 @@ RUN  pip install poetry && poetry config virtualenvs.create false && poetry inst
 WORKDIR /app/test
 
 
-RUN useradd --create-home testuser && chown testuser:testuser /app/test
-USER testuser
+
 
 ENV PATH="$PATH:/home/testuser/.local/bin"
 

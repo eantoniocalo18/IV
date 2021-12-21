@@ -55,9 +55,9 @@ Los test implementados corresponden con las siguientes funcionalidades del siste
 
 ## Documentación
 
-La documentación del proyecto se encuentra en el archivo en [este enlace](https://github.com/eantoniocalo18/IV/tree/main/docs)
+La documentación del proyecto se encuentra en el archivo en [este enlace](docs)
 
- - En el archivo [Issues](https://github.com/eantoniocalo18/IV/docs/ISSUES.md) se encuentra la información relacionada con los tipos de usuario, las historias de usuario y los milestones
- - En el archivo [Eleccion lenguaje](https://github.com/eantoniocalo18/IV/docs/eleccion_lenguaje.md) se encuentra la información relacionada con la elección del lenguaje y el desarrollo de la clase Producto.
- - En el archivo [Eleccion gestores](https://github.com/eantoniocalo18/IV/docs/eleccion_gestores.md) Se ha justificado la elección de los gestores de dependencias y tareas.
+ - En el archivo [Issues](docs/ISSUES.md) se encuentra la información relacionada con los tipos de usuario, las historias de usuario y los milestones
+ - En el archivo [Eleccion lenguaje](docs/eleccion_lenguaje.md) se encuentra la información relacionada con la elección del lenguaje y el desarrollo de la clase Producto.
+ - En el archivo [Eleccion gestores](docs/eleccion_gestores.md) Se ha justificado la elección de los gestores de dependencias y tareas.
  - En el archivo [Dockers](docs.docker.md) Se ha justificado la elección de la imagen Docker que ha servido de base.

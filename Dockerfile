@@ -8,15 +8,13 @@ COPY pyproject.toml poetry.lock tasks.py ./
 
 RUN useradd --create-home testuser && chown testuser:testuser /app
 
+USER testuser
+
+ENV PATH="$PATH:/home/testuser/.local/bin"
 
 RUN  pip install poetry && poetry config virtualenvs.create false && poetry install 
 
 WORKDIR /app/test
-
-
-USER testuser
-
-ENV PATH="$PATH:/home/testuser/.local/bin"
 
 
 

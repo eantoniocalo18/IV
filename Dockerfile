@@ -4,11 +4,13 @@ LABEL version "1.0" mantainer="e.antoniocalo18@go.ugr.es"
 
 WORKDIR /app/
 
-COPY pyproject.toml poetry.lock tasks.py ./
-
 RUN useradd --create-home testuser && chown testuser:testuser /app
 
 USER testuser
+
+COPY pyproject.toml poetry.lock tasks.py ./
+
+
 
 ENV PATH="$PATH:/home/testuser/.local/bin"
 

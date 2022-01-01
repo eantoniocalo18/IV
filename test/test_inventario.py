@@ -1,6 +1,6 @@
 import pytest
 from assertpy import assert_that
-from funciones_test import *
+from .funciones_test import *
 from src.producto import Producto
 from src.inventario import Inventario
 

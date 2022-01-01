@@ -1,6 +1,5 @@
 import csv
 from src.producto import Producto
-# Función que leerá los datos de un fichero CSV y los pasará a un diccionario de productos
 
 def almacen_from_CSV(path):
     with open(path, mode='r') as csv_file:
@@ -19,13 +18,7 @@ def products_from_CSV(path):
         csv_reader = csv.reader(csv_file) 
         listado_productos= []
         for rows in csv_reader:
-            id= rows[0]
-            nombre= rows[1]
-            precio = rows[2]
-            espacio = rows[3]
-            cantidad_baja = rows[4]
-            cantidad_alta = rows[5]
-            producto = Producto(id,nombre,precio,espacio,cantidad_baja, cantidad_alta)
+            producto = Producto(rows[0],rows[1],rows[2],rows[3],rows[4],rows[5])
             listado_productos.append(producto)
     return listado_productos
     

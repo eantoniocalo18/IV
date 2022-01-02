@@ -10,4 +10,4 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run tests
-        run: docker run -t -v `pwd`:/app/test eantoniocalo18/iv
+        run: docker run -t -v `pwd`:/app/test eantoniocalo/iv

@@ -47,10 +47,10 @@ Tras definir los requisitos y comprobar cuáles de las herramientas los cumplen,
     - Circle CI
     - GitHub Actions
 
-Ambas herramientas podrían ser utilizadas para el desarrollo del proyecto, pero se va a usar Github Actions por los siguientes motivos:
-    - Github Actions ya ha sido utilizada anteriormente en este proyecto, por lo que ya estoy familiarizado con ella.
-    - Por otro lado, para usar Circle CI tendría que registrarme y aprender cómo se usa
-    - Por último, considero que los minutos gratuitos que ofrece Github Actions son suficientes para llevar a cabo las dos tareas necesarias y, por lo tanto no veo la necesidad de usar dos herramientas que hagan lo mismo.
+Ambas herramientas podrían ser utilizadas para el desarrollo del proyecto, por lo tanto, dado que no tenemos créditos ilimitados en ninguna de ellas, vamos a usar ambas.
+    - Github Actions ya ha sido utilizada anteriormente en este proyecto, por lo que ya estoy familiarizado con ella. Por lo tanto, se va a usar para la ejecución automática de los test cada vez que se realice un PR.
+
+    - Por otro lado, Circle CI será usada para la ejecución del proyecto sobre las diferentes versiones de Python.
 
 # Versiones del lenguaje
 

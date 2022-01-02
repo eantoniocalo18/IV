@@ -1,5 +1,11 @@
 #Integración continua
 
+## Definición de tareas
+
+Las tareas que se van a llevar a cabo y para las cuales se requiere de un sistema de integración continua son las siguientes:
+- Ejecutar pruebas de código con diferentes versiones del lenguaje de programación utilizado.
+- Automatizar la ejecución de los test del código para que se ejecuten cada vez que se hace un PR. Siguiendo la filosofía de 'código no probado, es código roto'. 
+
 ## Definición de requisitos
 
 Los requisitos que nos servirán para valorar positiva o negativamente una herramienta de integración continua serán los siguientes:
@@ -8,6 +14,7 @@ Los requisitos que nos servirán para valorar positiva o negativamente una herra
 - Versión de prueba / servicio gratuito
 - Soporte para Docker
 - Administración en la nube
+
 
 ## Alternativas encontradas
 
@@ -55,5 +62,6 @@ Ambas herramientas podrían ser utilizadas para el desarrollo del proyecto, por 
 # Versiones del lenguaje
 
 Este proyecto está desarrollado en Python, usando la version 3.9.
-Por lo tanto, las versiones en las que tendremos que comprobar si nuestro proyecto funciona serán las posteriores, así como la 3.8, que actualmente también es muy usada por la comunidad.
+Por lo tanto, se ve la necesidad de testear el código del proyecto en las versiones anteriores y posteriores a la utilizada para comprobar su correcto funcionamiento.
+
 Sin embargo, no veo la necesidad de comprobar las versiones más antiguas (como la 3.6 que se declarará obsoleta próximamente) dado que poco a poco quedarán obsoletas y no recibirán más actualizaciones, por lo que siempre tenemos que mirar hacia el futuro y asegurarnos de que las nuevas veriones de python serán compatibles con este proyecto.

@@ -56,4 +56,4 @@ Ambas herramientas podrían ser utilizadas para el desarrollo del proyecto, por 
 
 Este proyecto está desarrollado en Python, usando la version 3.9.
 Por lo tanto, las versiones en las que tendremos que comprobar si nuestro proyecto funciona serán las posteriores, así como la 3.8, que actualmente también es muy usada por la comunidad.
-Sin embargo, no veo la necesidad de comprobar las versiones más antiguas (como la 3.6) dado que poco a poco quedarán obsoletas y no recibirán más actualizaciones, por lo que siempre tenemos que mirar hacia el futuro y asegurarnos de que las nuevas veriones de python serán compatibles con este proyecto.
+Sin embargo, no veo la necesidad de comprobar las versiones más antiguas (como la 3.6 que se declarará obsoleta próximamente) dado que poco a poco quedarán obsoletas y no recibirán más actualizaciones, por lo que siempre tenemos que mirar hacia el futuro y asegurarnos de que las nuevas veriones de python serán compatibles con este proyecto.

@@ -11,7 +11,7 @@ jobs:
       - checkout
       - run:
           name: Install dependencies
-          command: pip install poetry && poetry install 
+          command: pip install poetry && poetry config virtualenvs.create false && poetry install 
       - run:
           name: Run test
           command: invoke test

@@ -1,0 +1,25 @@
+version: 2.1
+
+jobs:
+  tests: 
+    parameters:
+      python-version:
+        type: string 
+    docker:
+      - image: circleci/python:<< parameters.python-version >>
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: pip install poetry && poetry config virtualenvs.create false && poetry install 
+      - run:
+          name: Run test
+          command: invoke test
+
+workflows:
+  pasar-tests: 
+    jobs:
+      - tests:
+          matrix:
+            parameters: 
+              python-version: ["3.7", "3.8","3.9" ,"3.10"]

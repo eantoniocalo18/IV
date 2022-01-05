@@ -24,4 +24,4 @@ def docker_run(c):
     '''
     Ejecuta el docker
     '''
-    run ('sudo docker run -t -v `pwd`:/app/test eantoniocalo/iv')
+    run ('docker run -t -v `pwd`:/app/test eantoniocalo/iv')

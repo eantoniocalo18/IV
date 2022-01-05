@@ -39,7 +39,7 @@ Circle CI cumple con todos los requisitos que habíamos definido, por lo tanto e
 
 Las funcionalidades y características de Travis CI son las que necesita nuestro proyecto, sin embargo su periodo de prueba obliga a descartarlo puesto que una vez terminado el periodo de prueba no vuelves a contar con minutos gratis y posiblemente este periodo de prueba no sea suficiente para llevar a cabo el proyecto de manera totalmente gratuita.
 
-- [GitHub Actions] (https://github.com/features/actions) :
+- [GitHub Actions](https://github.com/features/actions) :
     - Administración basada en la nube.
     - Cuenta con una matriz de versiones que permite probar diferentes versiones de Python (entre otros muchos lenguajes).
     - Al igual que Circle CI, da una serie de créditos que se recargan al principio de cada mes.
@@ -50,13 +50,16 @@ Esta herramienta también cumple con todos los requisitos que se han definido, p
 ## Elección final
 
 Tras definir los requisitos y comprobar cuáles de las herramientas los cumplen, tenemos dos herramientas que cumplen los requisitos:
+
+
     - Circle CI
     - GitHub Actions
 
 Ambas herramientas podrían ser utilizadas para el desarrollo del proyecto, por lo tanto, dado que no tenemos créditos ilimitados en ninguna de ellas, vamos a usar ambas.
+
     - Github Actions ya ha sido utilizada anteriormente en este proyecto, por lo que ya estoy familiarizado con ella. Por lo tanto, se va a usar para la ejecución automática de los test cada vez que se realice un PR. Para el desarrollo, se usará la [documentación oficial](https://github.com/docker/build-push-action) que proporciona github para la creación y subida de contenedores.
 
-    - Por otro lado, [Circle CI](https://github.com/circleci/circleci-docs) será usada para la ejecución del proyecto sobre las diferentes versiones de Python. Se usará la versión 2.1 ya que es la más actual y se comprobará para qué versiones de Python el proyecto funciona correctamente. 
+    - Por otro lado Circle CI será usada para la ejecución del proyecto sobre las diferentes versiones de Python. Se usará la versión 2.1 ya que es la más actual y se comprobará para qué versiones de Python el proyecto funciona correctamente. 
 
 # Versiones del lenguaje
 

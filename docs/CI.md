@@ -67,3 +67,13 @@ Este proyecto ha sido desarrollado en Python, usando la version 3.9 y [estas her
 Sin embargo, tenemos que proporcionar al usuario final la mayor información posible sobre nuestro proyecto, incluyendo en qué versiones de Python funciona correctamente el proyecto.
 Siguiendo la [guía del desarrollador de Python](https://devguide.python.org/#status-of-python-branches) podemos ver que las versiones 3.7 y 3.8 ya no lanzarán más archivos binarios solo correciones de seguridad, sin embargo, su ciclo de vida finalizará en junio 2023 y 2024 respectivamente. Por lo tanto, estas versiones deben ser testeadas ya que siguen siendo usadas por la comunidad y en mantenimiento.
 Por otra parte, las versiones 3.9 y 3.10 se consideran estables y siguen en mantenimiento activo y está previsto su fin de vida en 2026 y 2027 respectivamente. Estas versiones siguen en mantenimiento y se aceptan correciones de seguridad y de errores, además son las más usadas desde el 2020 [info](https://www.mclibre.org/consultar/python/otros/historia.html), por lo que también testearemos estas versiones.
+
+
+## Entorno virtual Poetry
+Para llevar a cabo la instalación de dependencias usando Poetry solo necesitamos ejecutar la orden:
+
+    - poetry install
+
+Con esto, ya tendríamos las dependencias instaladas. Sin embargo, estas dependencias estarían instaladas en un entorno virtual propio que crea poetry.
+Esto nos supone un problema, puesto que las pruebas que se van a realizar al código van a ser en un entorno virtualizado (un docker) y por otra parte la instalación con Poetry nos creará un nuevo entorno virtualizado. 
+Es por ello, que tenemos que pasarle el flag 'virtualenvs.create=False', para que Poetry no instale las dependencias en su propio entorno virtual sino en el entorno que nosotros estamos trabajando.

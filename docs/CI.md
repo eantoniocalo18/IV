@@ -9,7 +9,6 @@ Las tareas que se van a llevar a cabo y para las cuales se requiere de un sistem
 ## Definición de requisitos
 
 Los requisitos que nos servirán para valorar positiva o negativamente una herramienta de integración continua serán los siguientes:
-- Lenguajes soportados (versiones de Python)
 - Soporte para Github
 - Versión de prueba / servicio gratuito
 - Soporte para Docker
@@ -38,7 +37,7 @@ Circle CI cumple con todos los requisitos que habíamos definido, por lo tanto e
     - Además, se integra con Docker y Github.
     - Su servicio gratuito está basado en una serie de créditos iniciales que no se recargarán, por lo tanto tendríamos que pagar una vez se nos acaben.
 
-Las funcionalidades y características de Travis CI son las que necesita nuestro proyecto, sin embargo su periodo de prueba obliga a descartarlo puesto que estamos buscando una herramienta que nos permita llevar a cabo el proyecto de manera gratuita.
+Las funcionalidades y características de Travis CI son las que necesita nuestro proyecto, sin embargo su periodo de prueba obliga a descartarlo puesto que una vez terminado el periodo de prueba no vuelves a contar con minutos gratis y posiblemente este periodo de prueba no sea suficiente para llevar a cabo el proyecto de manera totalmente gratuita.
 
 - [GitHub Actions] (https://github.com/features/actions) :
     - Administración basada en la nube.
@@ -55,14 +54,13 @@ Tras definir los requisitos y comprobar cuáles de las herramientas los cumplen,
     - GitHub Actions
 
 Ambas herramientas podrían ser utilizadas para el desarrollo del proyecto, por lo tanto, dado que no tenemos créditos ilimitados en ninguna de ellas, vamos a usar ambas.
-    - Github Actions ya ha sido utilizada anteriormente en este proyecto, por lo que ya estoy familiarizado con ella. Por lo tanto, se va a usar para la ejecución automática de los test cada vez que se realice un PR.
+    - Github Actions ya ha sido utilizada anteriormente en este proyecto, por lo que ya estoy familiarizado con ella. Por lo tanto, se va a usar para la ejecución automática de los test cada vez que se realice un PR. Para el desarrollo, se usará la [documentación oficial](https://github.com/docker/build-push-action) que proporciona github para la creación y subida de contenedores.
 
-    - Por otro lado, Circle CI será usada para la ejecución del proyecto sobre las diferentes versiones de Python.
+    - Por otro lado, [Circle CI](https://github.com/circleci/circleci-docs) será usada para la ejecución del proyecto sobre las diferentes versiones de Python. Se usará la versión 2.1 ya que es la más actual y se comprobará para qué versiones de Python el proyecto funciona correctamente. 
 
 # Versiones del lenguaje
 
-Este proyecto está desarrollado en Python, usando la version 3.9.
-Por lo tanto, se ve la necesidad de testear el código del proyecto en las versiones anteriores y posteriores a la utilizada para comprobar su correcto funcionamiento.
-Dado que los test del proyecto ya verifican el correcto funcionamiento del mismo en la versión python 3.9, se comprobará si también funciona para las versiones 3.7, 3.8 y 3.10.
-
-Sin embargo, no veo la necesidad de comprobar las versiones más antiguas (como la 3.6 que se declarará obsoleta próximamente) dado que poco a poco quedarán obsoletas y no recibirán más actualizaciones, por lo que siempre tenemos que mirar hacia el futuro y asegurarnos de que las nuevas veriones de python serán compatibles con este proyecto.
+Este proyecto ha sido desarrollado en Python, usando la version 3.9 y [estas herramientas](https://github.com/eantoniocalo18/IV/blob/main/pyproject.toml)
+Sin embargo, tenemos que proporcionar al usuario final la mayor información posible sobre nuestro proyecto, incluyendo en qué versiones de Python funciona correctamente el proyecto.
+Siguiendo la [guía del desarrollador de Python](https://devguide.python.org/#status-of-python-branches) podemos ver que las versiones 3.7 y 3.8 ya no lanzarán más archivos binarios solo correciones de seguridad, sin embargo, su ciclo de vida finalizará en junio 2023 y 2024 respectivamente. Por lo tanto, estas versiones deben ser testeadas ya que siguen siendo usadas por la comunidad y en mantenimiento.
+Por otra parte, las versiones 3.9 y 3.10 se consideran estables y siguen en mantenimiento activo y está previsto su fin de vida en 2026 y 2027 respectivamente. Estas versiones siguen en mantenimiento y se aceptan correciones de seguridad y de errores, además son las más usadas desde el 2020 [info](https://www.mclibre.org/consultar/python/otros/historia.html), por lo que también testearemos estas versiones.
